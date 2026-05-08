@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summit Advisory Group</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #f4f6f9;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)),
+        url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1400&auto=format&fit=crop')
+        center/cover no-repeat;
+      color: white;
+      padding: 120px 60px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    section {
+      padding: 70px 60px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h3 {
+      font-size: 36px;
+      color: #0f172a;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      margin-bottom: 15px;
+      color: #2563eb;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .contact {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #020617;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media(max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      .hero h2 {
+        font-size: 34px;
+      }
+
+      section {
+        padding: 50px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Summit Advisory Group</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Smart Accounting & Business Advisory</h2>
+    <p>
+      Helping businesses grow with expert accounting, tax planning,
+      financial reporting, and strategic business advice.
+    </p>
+    <a href="#contact" class="btn">Book a Consultation</a>
+  </section>
+
+  <section id="services">
+    <div class="section-title">
+      <h3>Our Services</h3>
+    </div>
+
+    <div class="services">
+      <div class="card">
+        <h4>Accounting Services</h4>
+        <p>
+          Professional bookkeeping, payroll, and financial statement preparation
+          tailored for small and medium businesses.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>Tax Planning</h4>
+        <p>
+          Strategic tax solutions to help minimize liabilities and keep your
+          business compliant year-round.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>Business Advisory</h4>
+        <p>
+          Practical business guidance focused on growth, profitability,
+          budgeting, and long-term success.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>Cash Flow Management</h4>
+        <p>
+          Improve your financial visibility and maintain healthy cash flow
+          through expert planning and forecasting.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title">
+      <h3>About Us</h3>
+    </div>
+
+    <div class="about">
+      <div>
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="Business Team">
+      </div>
+
+      <div>
+        <h4 style="font-size: 28px; margin-bottom: 20px; color:#0f172a;">
+          Trusted Financial Experts
+        </h4>
+        <p>
+          At Summit Advisory Group, we work closely with business owners to
+          simplify finances and create practical strategies for sustainable growth.
+          Our mission is to provide clear financial guidance and dependable support.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="section-title">
+      <h3 style="color:white;">Contact Us</h3>
+    </div>
+
+    <p>Email: info@summitadvisory.com</p>
+    <p>Phone: +61 7 1234 5678</p>
+    <p>Location: Brisbane, Australia</p>
+
+    <a href="mailto:info@summitadvisory.com" class="btn">
+      Send an Email
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Summit Advisory Group. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
